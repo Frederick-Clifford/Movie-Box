@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    html {
+        @apply bg-black
+    }
+
+    body {
+        @apply md:mx-16 lg:mx-24 xl:mx-36
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-passion-one text-white
+    }
+
+    a, button {
+        @apply font-saira-extra-condensed text-white
+    }
+
+    p, li {
+        @apply font-charm text-white
+    }
+
+}
+
+@layer components {
+
+    .container-margin {
+        @apply mt-[72px] mb-4
+    }
+
+    .nav-bar {
+        @apply md:mx-16 lg:mx-24 xl:mx-36
+    }
+
+    .nav-bar-icon {
+        @apply w-[32px] h-[32px] md:w-[35px] md:h-[35px] object-contain
+    }
+
+    .nav-bar-text {
+        @apply font-leckerli-one text-[20px]
+    }
+
+    .title-text {
+        @apply text-[23px]
+    }
+
+    .movie-card {
+        @apply cursor-pointer w-[220px] h-max gap-px flex flex-col rounded-2xl hover:movie-card-shadow
+    }
+
+    .movie-card-top-radius {
+        @apply rounded-tl-2xl rounded-tr-2xl
+    }
+
+    .movie-card-bottom-radius {
+        @apply rounded-bl-2xl rounded-br-2xl
+    }
+
+    .movie-card-image {
+        @apply movie-card-top-radius w-full h-[300px] object-cover object-top
+    }
+
+    .movie-card-text-background {
+        @apply bg-black bg-opacity-20
+    }
+
+    .movie-card-shadow {
+        box-shadow: 1px 1px 6px white, -1px -1px 6px white;
+    }
+
+    .sub-title-text {
+        @apply text-[17px]
+    }
+
+    .description-text {
+        @apply text-[14px]
+    }
+
+    .movie-image {
+        @apply w-[220px] h-[300px] md:w-[250px] md:h-[330px] rounded-xl object-cover object-top
+    }
+
+    .movie-description-background {
+        @apply flex-[6] sm:flex-[7] flex flex-col gap-3 w-full border-[1px] rounded-t-lg ss:rounded-tr-none ss:rounded-bl-lg px-1 py-2
+    }
+
+    .primary-button {
+        @apply flex-1 text-[13px] bg-primary-color hover:bg-[#7a0f5e] py-1.5 px-6 flex gap-1 items-center justify-center rounded-xl
+    }
+
+    .secondary-button {
+        @apply primary-button bg-secondary-color hover:bg-[#0a6b6b]
+    }
+
+    .button-icon {
+        @apply w-[19px] h-[19px] object-contain
+    }
+
+    .search-error-image {
+        @apply w-[150px] h-[150px] object-contain
+    }
+
+}
