@@ -73,6 +73,8 @@ const Movie = ({ movie }) => {
                         {MOVIE_FIRST_BUTTON_TEXT}
                     </button>
 
+                    <button className="secondary-button p-0">
+
                     <a className="secondary-button"
                         href={movie.image}
                         download
@@ -84,6 +86,7 @@ const Movie = ({ movie }) => {
 
                         {MOVIE_SECOND_BUTTON_TEXT}
                     </a>
+                    </button>
                 </div>
 
             </div>
